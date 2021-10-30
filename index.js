@@ -51,6 +51,10 @@ app.get('/', (req, res) => {
     res.json('Welcome to this climate change API')
 })
 
+app.get('/news', (req, res) => {
+    res.json(articles)
+})
+
 app.get('/news/:newspaperId',   (req, res) => {
     const newspaperId = req.params.newspaperId
 
